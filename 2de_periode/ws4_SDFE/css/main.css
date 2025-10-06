@@ -1,0 +1,18 @@
+*
+{
+    border-collapse: collapse;
+}
+#thead
+{
+    background-color: red;
+    font-size: 32px;
+}
+#tbody 
+{
+    background-color: green;
+}
+#tfoot
+{
+    background-color: purple;
+    color: chocolate;
+}

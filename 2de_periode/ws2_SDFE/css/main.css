@@ -1,0 +1,23 @@
+*
+{
+    text-align: center;
+}
+
+h1
+{
+    background-color: black;
+    color: white;
+}
+
+.land
+{
+    border: solid;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#container
+{
+    display: flex;
+    margin-top: 100px;
+}
