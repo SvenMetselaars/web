@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="sven metselaars">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/main.css">    
+        <title>memory machine</title>
+    </head>
+    <body>
+        <div class="register_page">
+            <div class="register">
+                <div class="formDiv">
+                    <form action="game.html" method="GET" autocomplete="off">
+                        <h1>setup</h1>
+                        <div>
+                            <p class="dificulty_p">easy</p>
+                            <p class="dificulty_p">medium</p>
+                            <p class="dificulty_p">hard</p>
+                        </div>
+                        <div>
+                            <!-- radiobuttons for game -->
+                            <input type="radio" value="easy" required name="dif"            />
+                            <input type="radio" value="medium" required name="dif" checked  />
+                            <input type="radio" value="hard" required name="dif"            />
+                        </div>         
+                        <div>
+                            <p class="dificulty_p">player amount</p>
+                        </div>         
+                        <div>
+                            <p class="dificulty_a">1</p>
+                            <p class="dificulty_a">2</p>
+                        </div>
+                        <div>
+                            <!-- radiobuttons for game -->
+                            <input type="radio" value="1" required name="player_a" checked />
+                            <input type="radio" value="2" required name="player_a"         />
+                        </div>                         
+                        <input type="number" placeholder="max time (minutes)" name="S_max" required />
+                        <input type="submit" value="play" name="setupButton"                        />
+                    </form>
+                </div>
+                <div class = "leaderboardDif">
+                    <div class = "L_Choises">
+                        <!-- radio buttons for leaderboard -->
+                        <p class="dificulty_p">easy</p>
+                        <p class="dificulty_p">medium</p>
+                        <p class="dificulty_p">hard</p>
+                    </div>
+                    <div class="L_Choises">
+                        <input type="radio" value="easy" required name="dif_L" onclick="changeScore(this.value)"    />
+                        <input type="radio" value="medium" required name="dif_L" onclick="changeScore(this.value)"  /> 
+                        <input type="radio" value="hard" required name="dif_L" onclick="changeScore(this.value)"    />
+                    </div>
+                    <div>
+                        <table class="leaderBoard"> 
+                            <thead> 
+                                <tr>  
+                                    <th> user </th><th> tries </th><th> time </th><th> dif </th>
+                                </tr> 
+                            </thead> 
+                            <tbody id='LeaderBoardSpots'>
+                                <!-- here comes the info from script.js -->    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class='footer'>
+            &copy; Pattje72
+        </footer>
+        <!-- js script used -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/indexJs.js"></script>  
+    </body>
+</html>

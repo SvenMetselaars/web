@@ -1,0 +1,296 @@
+* {
+    margin: 0px;
+    padding: 0px;  
+}
+
+.gameStats {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 15%;
+    max-width: 1100px;
+    background-color: #ffffff75;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.gameStats_P2 {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 15%;
+    max-width: 1100px;
+    background-color: #ffffff75;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* make it disapear for smoll screens*/
+@media (max-width: 1200px) {
+    .gameStats,
+    .gameStats_P2,
+    .disapear{
+        display: none !important;
+    }
+}
+
+.gameStats div,
+.gameStats_P2 div{
+    display: flex;
+    justify-content: center;
+}
+
+.dificulty_a{
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.gameStats div p,
+.gameStats_P2 div p {
+    font-size: 200%;
+}
+
+body{
+    margin-bottom: 20px;
+    min-height: calc(100vh - 20px);
+    background-image: url("../img/images.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winScreen{
+    max-height: 225px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.835);
+    color: white;
+}
+
+#winScreen div button{
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 6px;
+    width: 35px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+/* Memory Cards */
+.cardsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 60%;
+    max-width: 1100px;
+    background-color: #ffffff75;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.js-card {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+}
+
+.js-card:hover {
+    background-color: #444;
+}
+
+.js-card.flipped {
+    background-color: orange;
+    color: #000;
+}
+
+.js-card.matched {
+    background-color: #0f0;
+    color: #000;
+}
+
+.register_page{
+    width: 95%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderboardDif img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.leaderboardDif {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.leaderboardDif form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.register div{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#textDiv input{
+    border: none;
+    border-left: 3px solid rgb(0, 0, 0);
+    background-color: rgb(240, 240, 240);
+    width: calc(100% - 5px);
+    height: 75%;
+    margin-top: 10px;
+}
+
+th,
+td{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.leaderBoard{
+    margin-top: 200px;
+}
+
+.formDiv{
+    border-right-style: solid;
+    justify-content: center;
+}
+
+.register div form input{
+    border: none;
+    border-left: 3px solid rgb(0, 0, 0);
+    background-color: rgb(240, 240, 240);
+    width: calc(100% - 5px);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.orderNowA,
+.register div form input[type="button"],
+.register div form input[type="submit"]{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.register div form{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.register div form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register div form div input[type="radio"]{
+    margin: 20px;
+}
+
+.dificulty_p{
+    margin: 7px;
+}
+
+.register
+{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.loginHeader{
+    margin: 0px;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.loginHeader a{
+    padding-left: 5px;
+    color: white;
+}
+
+.leaderboardDif img{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.footer
+{
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.leaderboardDif div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    height: 25px;
+    margin-top: 10px;
+}
+
+.disapear {
+    display: block;
+}
+
+.leaderboardDif div input[type="radio"] {
+    margin: 20px;
+}

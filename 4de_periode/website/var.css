@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+:root {
+	/* Colors */
+	--primary-color: #ff4d4d;
+	--secondary-color: #4d79ff;
+	--background-color: #1a1a2e;
+    --card-background: #3d435c5a;
+	--text-color: #ffffff;
+	--highlight-color: #f7b731;
+	--background-modal: #1a1a2ee1;
+	
+	/* Fonts */
+	--font-family: 'Tektur', sans-serif;
+	--font-size-base: 16px;
+	--font-size-large: 24px;
+	--font-size-xLarge: 34px;
+	--font-size-xxLarge: 36px;
+	--font-size-xxxLarge: 42px;
+	--font-size-small: 14px;
+	
+	/* Borders & Shadows */
+	--border-radius: 10px;
+    --card-border: 4px solid var(--secondary-color);
+	--box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	--box-shadow-light: 0px 2px 4px rgba(100, 100, 100, 0.4);
+
+	/* hover */
+	--hover-border-white: rgba(255, 255, 255, 0.8);
+  
+	/* Spacing */
+	--spacing-small: 8px;
+	--spacing-medium: 16px;
+	--spacing-large: 24px;
+  
+	/* Animation */
+	--transition-speed: 0.2s ease-in-out;
+
+	--card-size: 110px;
+  }
+  

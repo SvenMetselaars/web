@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="sven metselaars">
+        <link rel="stylesheet" href="css/main.css">      
+        <title>connect machine</title>
+    </head>
+    <body>
+        <div class="text-cards"></div>
+    
+        <!-- Hidden win screen -->
+        <div id="winScreen">
+            <p id="winScreen_P"></p>
+            <div id="textDiv">
+                <input type="text" placeholder="username" name="G_username" id="G_username" required />
+            </div>
+            <div>
+                <button onclick="sendData()">Yes</button>
+                <button onclick="hideWinScreen()">No</button>
+            </div>
+        </div>
+    
+        <div>
+            <div id="gameTime">you have 30 seconds left</div>
+            <div id="leaderboard">
+                <table class="leaderBoard"> 
+                    <thead> 
+                        <tr>  
+                            <th> user </th><th> tries </th><th> time </th>
+                        </tr> 
+                    </thead> 
+                    <tbody id='LeaderBoardSpots'>
+                        <!-- here comes the info from script.js -->  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="emoji-cards"></div>
+    
+        <footer class='footer'>
+            &copy; Pattje72
+        </footer>
+    </body>
+</html>
+
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>showLeaderboard();</script>

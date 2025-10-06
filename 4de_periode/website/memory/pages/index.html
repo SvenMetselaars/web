@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../inc/css/main.css">
+	<title>memory</title>
+</head>
+<body>
+	<header>
+		<div id="home">memory</div>
+	</header>
+
+	<div class="js-card-container">
+		<!-- <div class="js-card"></div> -->
+	</div>
+
+<div id="winModal" class="modal">
+	<div class="model-border">
+		<div class="modal-content">
+			<div class="modal-text">You won! Want to start over?</div>
+			<button onclick="restartGame()">Yes</button>
+			<button onclick="closeModal()">No</button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+<script src="../inc/js/main.js"></script>
+<!-- card JS -->
+<script> 
+	generateMemoryCards(20);
+	renderCards();
+	console.log($cards);
+</script>
