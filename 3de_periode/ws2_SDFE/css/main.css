@@ -1,0 +1,68 @@
+
+.red
+{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.groen
+{
+    background-color: papayawhip;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.blue
+{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.puple
+{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.yellow
+{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+
+}
+.black
+{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 460px;
+    z-index: 2;
+    color: red;
+}
+.bruin
+{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 180px;
+    left: 540px;
+    z-index: 3;
+}
