@@ -16,7 +16,7 @@ $.ajax({
 
 
             $("#LeaderBoardSpots").append("<tr>");
-                                               // the information //
+            // the information //
             $("#LeaderBoardSpots").append("<td>" + item.player + "</td>");
             $("#LeaderBoardSpots").append("<td>" + item.tries + "</td>");
             $("#LeaderBoardSpots").append("<td>" + item.time + "</td>");
